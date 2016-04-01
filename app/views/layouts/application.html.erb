@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+  <div class="border"></div>
+
+<% if alert %>
+  <div id="notice_wrapper" %>
+    <p class="alert"><%= alert %></p>
+  </div>
+<% elsif notice %>
+  <div id="notice_wrapper" %>
+    <p class="notice"><%= notice %></p>
+  </div>
+<% end %>
+
+  <%= render "layouts/header" %>
+  <div class="container">
+    <%= yield %>
+  </div>
+<script>
+  $(document).ready(function() {
+    setTimeout(function() {
+      $('#notice_wrapper').fadeOut("slow", function() {
+       $this.removal();
+      });
+  }, 1500 );
+});
+</script>
+
+</body>
+</html>

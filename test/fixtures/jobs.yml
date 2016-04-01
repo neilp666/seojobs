@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  apply: MyText
+  company: MyString
+  url: MyString
+  availability: false
+
+two:
+  title: MyString
+  description: MyText
+  apply: MyText
+  company: MyString
+  url: MyString
+  availability: false

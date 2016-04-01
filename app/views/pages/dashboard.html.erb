@@ -1,0 +1,35 @@
+<div class="row">
+  <h1 class="text-center">Dashboard</h1>
+
+  
+    <h3 class="text-center">
+      JOBS <%= link_to "New Job", new_job_path, class: "btn btn-primary btn-sm" %>
+    </h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+         
+          <th>Job Title</th>
+          <th class="text-center">Job Description</th>
+          <th>How do people apply</th>
+          <th>Company Name</th>
+          <th class="text-center">URL</th>
+          <th>Is the job available</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @jobs.each do |job| %>
+        <tr>
+         
+          <td><%= job.title %></td>
+          <td><%= job.description %></td>
+          <td><%= job.apply %></td>
+          <td><%= job.company %></td>
+          <td><%= job.url %></td>
+          <td><%= job.availability %></td>
+          <td><%= link_to "Edit", edit_job_path(job) %></td>
+       </tr>
+       <% end %>
+      </tbody>
+    </table>
+
