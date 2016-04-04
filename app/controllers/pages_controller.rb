@@ -4,6 +4,7 @@ class PagesController < ApplicationController
     if current_user
       redirect_to jobs_path
     end
+    @jobs = Job.last(4)
   end
 
   def dashboard
