@@ -7,8 +7,9 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.all.where(availability: true)
-     @jobs = Job.all.order("created_at DESC")
+    @jobs = Job.all.order("created_at DESC")
+    @jobs = Job.where(availability: true)
+   
   end
 
   # GET /jobs/1
@@ -76,6 +77,6 @@ class JobsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
-      params.require(:job).permit(:title, :description, :apply, :company, :url, :availability, :image)
+      params.require(:job).permit(:title, :description, :apply, :company, :url, :availability)
     end
 end
