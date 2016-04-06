@@ -1,27 +1,23 @@
-<div class="row">
-    <div class="center">
-        
-          <h1>Find a Great job in the SEO Industry</h1>
-          <h3>We only show open SEO jobs to make your search easy</h1>
-          <br>
-           <%= link_to "Post a job FREE!" ,new_user_session_path, class: "btn btn-danger btn-lg" %><br/>
 
-  <nav class="nav1">
-  <a href="#" class="current">All Jobs</a>
-  <a href="#">Full-Time</a>
-  <a href="#">Part-Time</a>
-  <a href="#">Freelance</a>
-  <a href="#">Contract</a>
-</nav>
 
+
+<div class="starter-template">
+  <div class="center">
+    <h1><i class="fa fa-cube"></i>SEO jobs</h1>
+    <h2>Passionate about SEO? Find a Great job in the SEO Industry.</br> We only show open SEO jobs to make your <span class="emphasis">search easy</h2>
+    <br>
+     <%= link_to "Post a job FREE!" ,new_user_session_path, class: "btn btn-primary btn-lg" %><br/>
+
+    <nav class="nav1">
+    <a href="#" class="current">All Jobs</a>
+    <a href="#">Full-Time</a>
+    <a href="#">Part-Time</a>
+    <a href="#">Freelance</a>
+    <a href="#">Contract</a>
+    </nav>
+</br>
+<%= render @jobs %>
     </div>
 </div>
-<br/>
 
 
-
-<%= render @jobs %>
-
-<li class="load_more">
-  <button class"button">Load More</button>
-</li>
