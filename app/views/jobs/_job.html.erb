@@ -1,10 +1,11 @@
+
 <ul id="timeline">
   
     <li class="listing clearfix">
       
         <div class="info">
             <span class="job_title"><%= link_to job.title, job_path(job) %></span>
-            <span class="job_info"><%= job.company %><span>&bull;</span> New York <span>
+            <span class="job_info"><%= job.company %><span>&bull;</span><%= link_to job.location %> <span>
             &bull;</span>Posted <%= time_ago_in_words(job.created_at) %> ago</span>
         </div>
             <span class="job_type full_time"> Full-Time</span>
