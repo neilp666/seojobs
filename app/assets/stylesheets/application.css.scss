@@ -48,6 +48,15 @@ h1 {
 
 }
 
+hr {
+  width: 3em;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid $highlight_1;
+  margin: 2rem 0;
+}
+
 h2 {
   font-family: helvetica;
   font-weight: 100;
@@ -107,6 +116,63 @@ h2 {
   }
 }
 
+
+/* Jobs Show Page */
+
+#job_show_content {
+  header {
+  text-align: center;
+  .date {
+    font-size: .9em;
+    color: black;
+    margin: 0;
+  }
+ }
+ hr {
+    margin: 2em auto;
+  }
+}
+
+
+#main_footer {
+  padding: 10.5em 25%;
+  
+  .copyright {
+    float: left;
+    font-size: .9em;
+    margin: 0;
+   }
+   nav {
+    float: right;
+    i {
+      color: $main;
+      margin-left: 1em;
+      padding-top: .2em;
+      &:hover {
+        color: $highlight_4;
+      }
+    }
+   }
+ }
+#share_box {
+  text-align: center;
+  p {
+    padding: 0 0 1em 0;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $main;
+    font-size: .9em;
+  }
+  i {
+    color: $main;
+    padding: 1em 1.5em;
+    &:hover {
+      color: $highlight_3;
+      cursor: pointer;
+    }
+  }
+}
 
 #timeline {
   width: 100%;

@@ -1,14 +1,24 @@
-<p id="notice"><%= notice %></p>
+<div id="job_show_content">
+    <header>
+      <p class="date">Job Posted on <%= @job.created_at.to_formatted_s(:long) %></p>
+      <h2><%= @job.title %></h2>
+      <hr>
+  
 
-<p>
-  <strong>Title:</strong>
-  <%= @job.title %>
-</p>
+    <div id="content">
+     <p><%= simple_format @job.description %></p>
+    </div>
+      </header>
+  <hr>
+    <div id="share_box">
+      <p>Share the Job</p>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+    </div>
+  <hr>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= simple_format @job.description %>
-</p>
 
 <p>
   <strong>Apply:</strong>
@@ -35,8 +45,8 @@
   <%= @job.location %>
 </p>
 
-<p class="text-muted">
-  Job Posted on <%= @job.created_at.to_formatted_s(:long) %>
-</p>
+
+
+
 
 
