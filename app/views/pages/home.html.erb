@@ -1,19 +1,14 @@
+<div class="container">
+      <div class="starter-template">
+        <h1><i class="fa fa-cube"></i> Work in SEO</h1>
+        <p class="lead">Passionate about SEO? Find a Great job in the SEO Industry.<br> We only show open SEO jobs to make your <span class="emphasis"> search easy!</p>
+        <br>
+        <%= render @jobs %>
+      </div>
+</div><!-- /.container -->
 
-
-
-<div class="starter-template">
-  <div class="center">
-    <h1><i class="fa fa-cube"></i>SEO Jobs</h1>
-    <h2>Passionate about SEO? Find a Great job in the SEO Industry.</br> We only show open SEO jobs to make your <span class="emphasis">search easy</br/> & apply directly</h2>
-    <br>
-     <%= link_to "Post a job It's FREE!" ,new_user_session_path, class: "btn btn-primary btn-lg" %><br/>
-
-   
-</br>
-<%= render @jobs %>
-    </div>
-
-</div>
+    
 <%= render 'layouts/footer'%>
+
 
 

@@ -6,12 +6,13 @@
         <div class="info">
             <span class="job_title"><%= link_to job.title, job_path(job) %></span>
             <span class="job_info"><%= job.company %><span>&bull;</span><%= link_to job.location %> <span>
-            &bull;</span>Posted <%= time_ago_in_words(job.created_at) %> ago</span>
+            &bull;</span> Job Posted <%= job.created_at.to_formatted_s(:long)%></span>
+
         </div>
             <span class="job_type full_time"> Full-Time</span>
         </li>
 
-  
+ 
          
     </ul>
 
