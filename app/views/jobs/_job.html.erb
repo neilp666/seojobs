@@ -1,20 +1,14 @@
 
 <ul id="timeline">
-  
     <li class="listing clearfix">
-      
         <div class="info">
-            <span class="job_title"><%= link_to job.title, job_path(job) %></span>
-            <span class="job_info"><%= job.company %><span>&bull;</span><%= link_to job.location %> <span>
-            &bull;</span> Job Posted <%= job.created_at.to_formatted_s(:long)%></span>
-
+            <span class="job_title"> <%= job.company %>  is hiring a <%= job.title %> in <%= job.location %></span>
+            
+            <br>Job Posted <%= job.created_at.to_formatted_s(:long)%></span><br>
+             <%= link_to "Apply for Job", job.url %>
         </div>
-            <span class="job_type full_time"> Full-Time</span>
-        </li>
-
- 
-         
-    </ul>
+    </li>
+</ul>
 
 
 

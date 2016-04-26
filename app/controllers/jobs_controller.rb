@@ -8,7 +8,7 @@ class JobsController < ApplicationController
   # GET /jobs.json
   def index
     @jobs = Job.all.order("created_at DESC")
-    @jobs = Job.where(availability: true)
+  
    
   end
 
